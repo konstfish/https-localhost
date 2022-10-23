@@ -2,6 +2,20 @@
 
 HTTPS for localhost using [mkcert](https://github.com/FiloSottile/mkcert)
 
+[![Docker Image Version](https://img.shields.io/docker/v/konstfish/https-localhost)](https://hub.docker.com/repository/docker/konstfish/https-localhost)
+
+## Setup
+```bash
+brew install mkcert
+brew install nss # for firefox
+
+mkdir -p ~/mkcert
+cd ~/mkcert
+
+mkcert -install
+mkcert localhost
+```
+
 ## Build
 ```
 git clone https://github.com/konstfish/https-localhost
